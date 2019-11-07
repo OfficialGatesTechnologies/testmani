@@ -1,0 +1,19 @@
+// We can import bulma into the project using Sass.
+
+
+// $navbar-item-img-max-height: 90%;
+
+// import bulma and other stylesheets after updating variables
+@import "../node_modules/bulma/bulma";
+@import '../node_modules/bulma-extensions/bulma-checkradio/dist/css/bulma-checkradio.min.css';
+@import '../node_modules/bulma-extensions/bulma-tooltip/dist/css/bulma-tooltip.min.css';
+@import '../node_modules/bulma-extensions/bulma-switch/dist/css/bulma-switch.min.css';
+@import '../node_modules/bulma-extensions/bulma-accordion/dist/css/bulma-accordion.min.css';
+@import '../node_modules/bulma-extensions/bulma-carousel/dist/css/bulma-carousel.min.css';
+@import '../node_modules/react-toastify/dist/ReactToastify.css';
+@import "../node_modules/react-responsive-carousel/lib/styles/carousel.min.css";
+@import "../node_modules/react-accessible-accordion/dist/fancy-example.css";
+@import "../node_modules/react-rangeslider/lib/index.css";
+@import '../node_modules/react-day-picker/lib/style.css';
+@import "../node_modules/react-alice-carousel/lib/scss/alice-carousel.scss";
+@import '../node_modules/react-responsive-tabs/styles.css';
