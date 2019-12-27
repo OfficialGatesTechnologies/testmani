@@ -29,6 +29,7 @@
     "compression": "^1.7.4",
     "country-data": "0.0.31",
     "express": "^4.17.1",
+    "firebase": "^7.6.1",
     "font-awesome": "^4.7.0",
     "google-maps-react": "^2.0.2",
     "highcharts": "^7.2.0",

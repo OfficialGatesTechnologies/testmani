@@ -7,6 +7,7 @@ import axios from 'axios';
 import io from 'socket.io-client';
 export default withRouter(class Index extends Component {
     constructor(props) {
+        
         super(props);
         this.state = {
           message :''
@@ -14,7 +15,9 @@ export default withRouter(class Index extends Component {
     }
     componentDidMount = () => {
         this.socket = io();
-        setInterval(this.receiveValues(), 1000)
+       // setInterval(this.receiveValues(), 1000);
+        this.receiveValues(); 
+       
     }
     receiveValues = () => {
         this.socket.on('connectUserFront', (req) => {
