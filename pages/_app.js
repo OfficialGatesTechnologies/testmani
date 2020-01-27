@@ -3,10 +3,9 @@ import App, { Container } from 'next/app';
 import Layout from '../components/Layout';
 import NProgress from 'nprogress';
 import Router from 'next/router';
-import '../styles/styles.scss';
+ 
 import Footer from '../components/footer';
-import registerServiceWorker from '../components/registerServiceWorker';
-import { initializeFirebase } from '../components/push-notification';
+ 
 Router.events.on('routeChangeStart', () => {
   NProgress.start();
 })
@@ -24,8 +23,8 @@ export default class MyApp extends App {
     return { pageProps }
   }
   componentDidMount() {
-    registerServiceWorker()
-    initializeFirebase()
+    
+    
 
   }
  

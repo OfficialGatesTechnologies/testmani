@@ -28,8 +28,17 @@ app.prepare()
             }
             next();
         });
+        nextapp.use('/static', express.static(__dirname + '/static'));
         nextapp.get('*', (req, res) => {
-            return handle(req, res)
+            // const parsedUrl = parse(req.url, true)
+            // const { pathname } = parsedUrl
+            // if (pathname === '/robots.txt') {
+            //     const filePath = join(__dirname, 'public', pathname)
+            //     app.serveStatic(req, res, filePath)
+            // } else {
+            //     handle(req, res, parsedUrl)
+            // }
+           return  handle(req, res)
         })
         io.on('connection', (socket) => {
            
