@@ -4,13 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass-chokidar / -o /",
-    "watch-css": "npm run build-css && node-sass-chokidar / -o / --watch --recursive",
-    "dev": "nodemon server.js",
-    "build": "next build",
-    "start": "node server.js -p 3002",
-    "heroku-postbuild": "npm run build",
-    "export": "npm run build && next export"
+  "run": "node server.js",
+  "build": "next build",
+  "start": "NODE_ENV=production node server.js"
   },
   "keywords": [],
   "author": "",
